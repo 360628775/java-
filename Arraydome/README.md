@@ -11,8 +11,6 @@
 
 #### 2.默认值
 
-
-
 ```java
 int array[]=new int[10];
 System.out.println(Arrays.toString(array));
@@ -20,14 +18,30 @@ System.out.println(Arrays.toString(array));
 String strings[]=new String[10];
 System.out.println(Arrays.toString(strings));
 //[null, null, null, null, null, null, null, null, null, null]
-
-
-
 ```
 
 数组的默认值为元素类型的默认值
+#### 3.数组元素的访问
 
-### Arrays类
+```java
+int array1[]=new int[]{1,2,3,4,5,6,7,8,9,10};
+System.out.println(Arrays.toString(array1[0]));
+System.out.println(Arrays.toString(array1[1]));
+System.out.println(Arrays.toString(array1[2]));
+/*
+输出：
+1
+2
+3
+*/
+
+```
+
+##### 数组访问通过下标访问 范围 整数 [0, array.lenght）左闭有开 <不在范围内的值均为越界！！！>
+
+
+
+### Arrays类(工具类)
 
 #### 基本函数
 
